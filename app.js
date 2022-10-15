@@ -46,24 +46,6 @@ console.log(myAcc.accountBalance);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //    =+=+=+=+=+=+=+=+=+=+=+      Quest Number 2     =+=+=+=+=+=+=+=+=+=+=+=+=+=
 // *************** Create an Automobile class. The class will have name, model, color, type properties and
 // create different methods e.g openOrCloseDoor() logs doors are opened or closed, start()
@@ -95,6 +77,8 @@ class Automobile {
 
 }
 let car = new Automobile('car', 'Fx', '2013', 'Black', '240km/hr');
+
+
 
 
 
