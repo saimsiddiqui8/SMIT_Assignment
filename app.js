@@ -6,72 +6,9 @@
 //    and expenses is also an array of objects having expense and its description.
 //    **********
 
-
-// class PersonAccount {
-//         constructor(firstname,lastname,salary, partTime, expense, houseRent, Bills) {
-//             this.firstname = firstname;
-//             this.lastname = lastname;
-//             this.expenses = [
-//                 {
-//                     expense : expense,
-//                 }
-//             ]
-//             this.incomes = [
-//                 {
-//                     salary : salary,
-//                 }
-//             ]   
-//         } 
-//         totalincome() {
-//             let allIncome = this.incomes;
-//             return allIncome;
-//         }
-//         totalExpense() {
-//             let allExpense = this.expenses;
-//             return allExpense;
-//         }
-//         accountInfo() {
-//             let info = `${this.firstname} ${this.lastname}`;
-//             return info;
-//         }
-//         addIncome(addIncome) {
-//             return  this.incomes[0].income + addIncome
-//         }
-//         addExpense(addExpense) {
-//             return this.expenses[0].expense + addExpense
-//         }
-//         accountBalance() {
-//             let accBalance = this.incomes[0].income - this.expenses[0].expense;
-//             return accBalance;
-//         }
-//     }
-
-// const myAcc = new PersonAccount("Saim", "Ali", 50000, 4000, 30000, 12000, 2000);
-
-
-
-//****** For adding amount to income******
-// console.log( myAcc.addIncome(679));
-
-
-//****** For adding amount to Expense******
-// console.log( myAcc.addExpense(679));
-
-
-// console.log(myAcc.incomes);
-
-
-
-
-
-
-
-
-
-
-
 class PersonAccount {
     constructor(firstName, lastName, incomes, expenses) {
+
         this.firstName = firstName;
         this.lastName = lastName;
         this.incomes = incomes;
@@ -95,12 +32,13 @@ class PersonAccount {
 }
 
 const myAcc = new PersonAccount("Saim", "Ali", [], []);
+
 myAcc.addIncome(20000, "Freelancing");
 myAcc.addExpense(5000, "StreetFood");
+console.log(myAcc)
 console.log(myAcc.totalIncome);
 console.log(myAcc.totalExpense);
 console.log(myAcc.accountBalance);
-console.log(myAcc)
 
 
 
@@ -132,31 +70,31 @@ console.log(myAcc)
 // logs car is ready for drive.************************
 
 
-// class Automobile {
-//     constructor(type, name, model, color, maxSpeed) {
-//         this.type = type;
-//         this.name = name;
-//         this.model = model;
-//         this.color = color;
-//         this.maxSpeed = maxSpeed;
-//     }
+class Automobile {
+    constructor(type, name, model, color, maxSpeed) {
+        this.type = type;
+        this.name = name;
+        this.model = model;
+        this.color = color;
+        this.maxSpeed = maxSpeed;
+    }
 
-//         openOrCloseDoor() {
-//             let count = Math.floor((Math.random() * 10))
-//             if (count >= 5) {
-//                 console.log("Doors are closed !");
-//                 start(this.type);
-//             }
-//             else {
-//                 console.log("Doors are opened !");
-//             }
-//             function start(type) {
-//                 console.log(`${type} is ready for drive`);
-//             }
-//         }
+        openOrCloseDoor() {
+            let count = Math.floor((Math.random() * 10))
+            if (count >= 5) {
+                console.log("Doors are closed !");
+                start(this.type);
+            }
+            else {
+                console.log("Doors are opened !");
+            }
+            function start(type) {
+                console.log(`${type} is ready for drive`);
+            }
+        }
 
-// }
-// let car = new Automobile('car', 'Fx', '2013', 'Black', '240km/hr');
+}
+let car = new Automobile('car', 'Fx', '2013', 'Black', '240km/hr');
 
 
 
@@ -166,8 +104,8 @@ console.log(myAcc)
 //    =+=+=+=+=+=+=+=+=+=+=++      Quest Number 3     =+=+=+=+=+=+=+=+=+=+=+=+=+=
 //    ****************Create Car, Bus and Truck child class from the Automobile Class.**********
 
-// let bus  = new Automobile('Bus', 'Coaster', '2009', 'White', '130km/hr');
-// let truck = new Automobile('truck', 'tanker', '1998', 'Blue', '90km/hr');
-// car.openOrCloseDoor()
-// bus.openOrCloseDoor()
-// truck.openOrCloseDoor()
+let bus  = new Automobile('Bus', 'Coaster', '2009', 'White', '130km/hr');
+let truck = new Automobile('truck', 'tanker', '1998', 'Blue', '90km/hr');
+car.openOrCloseDoor()
+bus.openOrCloseDoor()
+truck.openOrCloseDoor()
